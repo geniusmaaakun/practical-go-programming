@@ -27,6 +27,7 @@ func NewNoCopyStruct(value string) *NoCopyStruct {
 
 // メソッドの中でチェック
 func (n *NoCopyStruct) String() string {
+	//アドレスの比較
 	if n != n.self {
 		panic("should not copy NoCopyStruct instance without Copy() method")
 	}

@@ -36,7 +36,7 @@ func use() {
 	fmt.Println(b.Title)
 	fmt.Println((*b).Title)
 	b2 := &b
-	fmt.Println((**b2).Title)
+	fmt.Println((**b2).Title) //2つ必要
 }
 
 // method

@@ -29,11 +29,11 @@ func function(i int) {
 
 // non-type-const
 const (
-	a = 1              // イコールの右側の1が定数
-	b = 1 + 2          // 演算もできる
+	a = 1                       // イコールの右側の1が定数
+	b = 1 + 2                   // 演算もできる
 	c = 9223372036854775807 + 1 // uint64を超える数値も定義可能
-	d = "hello world"  // 整数以外に、浮動小数点数や文字列やブール型も扱える
-	e = iota + 10      // const宣言でのみiotaも使える
+	d = "hello world"           // 整数以外に、浮動小数点数や文字列やブール型も扱える
+	e = iota + 10               // const宣言でのみiotaも使える
 )
 
 // non-type-const
@@ -96,6 +96,8 @@ func main() {
 	if err == ErrDatabase {
 		log.Fatal("DB接続エラー")
 	}
+
+	//書き換えできる
 	// use-constant-instance
 	// override-error-instance
 	sql.ErrConnDone = errors.New("エラーを乗っ取りもできてしまう")

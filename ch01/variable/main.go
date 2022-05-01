@@ -2,6 +2,8 @@ package main
 
 import "log"
 
+//明示的に型を指定する必要がなければ、短縮形にする。
+
 func main() {
 	// two-types
 	// ゼロ値
